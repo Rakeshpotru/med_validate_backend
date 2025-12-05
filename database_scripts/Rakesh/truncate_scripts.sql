@@ -1,0 +1,51 @@
+-- PROJECTS TRUNCATE START
+
+TRUNCATE TABLE ai_verify_transaction.projects CASCADE;
+ALTER SEQUENCE ai_verify_transaction.projects_project_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.projects_user_mapping CASCADE;
+ALTER SEQUENCE  ai_verify_transaction.projects_user_mapping_project_user_map_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.project_phases_list CASCADE;
+ALTER SEQUENCE  ai_verify_transaction.project_phases_list_project_phase_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.project_phase_users CASCADE;
+ALTER SEQUENCE  ai_verify_transaction.project_phase_users_project_phase_user_map_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.project_tasks_list CASCADE;
+ALTER SEQUENCE  ai_verify_transaction.project_tasks_list_project_task_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.project_task_users CASCADE;
+ALTER SEQUENCE  ai_verify_transaction.project_task_users_project_task_user_map_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.project_files CASCADE;
+ALTER SEQUENCE ai_verify_transaction.project_files_project_file_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.project_comments CASCADE;
+ALTER SEQUENCE ai_verify_transaction.project_comments_comment_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.comment_replies CASCADE;
+ALTER SEQUENCE  ai_verify_transaction.comment_replies_reply_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.incident_reports CASCADE;
+ALTER SEQUENCE ai_verify_transaction.incident_reports_incident_report_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_docs.task_docs CASCADE;
+ALTER SEQUENCE ai_verify_docs.task_docs_task_doc_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.incident_report CASCADE;
+ALTER SEQUENCE ai_verify_transaction.incident_report_incident_report_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.incident_report_transactions CASCADE;
+ALTER SEQUENCE ai_verify_transaction.incident_report_transactions_incident_report_transaction_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.change_request CASCADE;
+ALTER SEQUENCE ai_verify_transaction.change_request_change_request_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.change_request_user_mapping CASCADE;
+ALTER SEQUENCE ai_verify_transaction.change_request_user_mapping_change_request_user_mapping_id_seq RESTART;
+
+TRUNCATE TABLE ai_verify_transaction.json_template_transactions CASCADE;
+ALTER SEQUENCE ai_verify_transaction.json_template_transactions_trnasaction_template_id_seq RESTART;
+
+-- PROJECTS TRUNCATE END
